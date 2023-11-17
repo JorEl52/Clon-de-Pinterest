@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clon Pinterest</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <!--Barra de navegación-->
+    <nav id="navbar-pinterest">
+        <div id="icono">
+            <a href="https://www.pinterest.com.mx/">
+            <img id="pinterest-icon" src="data:image/png;base64,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">
+            </a>
+        </div>
+        <div id="inicio">Inicio</div>
+        <div id="explorar">Explorar</div>
+        <div id="crear">Crear</div>
+
+        <div class="finder">
+            <img src="https://img.icons8.com/sf-black/64/search.png" alt="search">
+            <input type="text" placeholder="Buscar">
+        </div>
+
+        <div id="notifications">
+            <img id="notificacion" src="https://cdn.pixabay.com/photo/2015/12/16/17/41/bell-1096279_1280.png" >
+        </div>
+
+        <div id="message">
+            <img id="mensaje" src="https://img.icons8.com/ios-filled/50/speech-bubble-with-dots.png">
+        </div>
+
+        <div id="profile-img">
+            <img id="perfil" src="https://cdn.pixabay.com/photo/2023/02/18/11/00/icon-7797704_1280.png">
+        </div>
+
+        <div id="icono4">
+            <img id="mas" src="https://cdn-icons-png.flaticon.com/512/32/32195.png">
+        </div>
+    </nav>
+
+    <!--imágenes-->
+    <main class="content">
+        <!--Imagen 1-->
+        <section class="pos1 position">
+            <img class="card-image" src="https://images.pexels.com/photos/18949730/pexels-photo-18949730/free-photo-of-madera-banco-ligero-paisaje.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
+            <button class="guardar">Guardar</button>
+        </section>
+        <!--Imagen 2-->
+        <section class="pos2 position">
+            <img class="card-image" src="https://images.pexels.com/photos/17854503/pexels-photo-17854503/free-photo-of-punto-de-referencia-edificio-bosque-arboles.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
+            <button class="guardar">Guardar</button>
+        </section>
+        <!--Imagen 3-->
+        <section class="pos3 position">
+            <img class="card-image" src="https://images.pexels.com/photos/19037299/pexels-photo-19037299/free-photo-of-paisaje-hombre-acantilado-en-pie.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
+            <button class="guardar">Guardar</button>
+        </section>
+        <!--Imagen 4-->
+        <section class="pos4 position">
+            <img class="card-image" src="https://images.pexels.com/photos/13248438/pexels-photo-13248438.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
+            <button class="guardar">Guardar</button>
+        </section>
+        <!--Imagen 5-->
+        <section class="pos5 position">
+            <img class="card-image" src="https://images.pexels.com/photos/5804450/pexels-photo-5804450.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
+            <button class="guardar">Guardar</button>
+        </section>
+        <!--Imagen 6-->
+        <section class="pos6 position">
+            <img class="card-image" src="https://images.pexels.com/photos/12360591/pexels-photo-12360591.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
+            <button class="guardar">Guardar</button>
+        </section>
+        <!--Imagen 7-->
+        <section class="pos7 position">
+            <img class="card-image" src="https://images.pexels.com/photos/19094136/pexels-photo-19094136.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
+            <button class="guardar">Guardar</button>
+        </section>
+        <!--Imagen 8-->
+        <section class="pos8 position">
+            <img class="card-image" src="https://images.pexels.com/photos/18932328/pexels-photo-18932328/free-photo-of-ciudad-punto-de-referencia-calle-italia.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
+            <button class="guardar">Guardar</button>
+        </section>
+        <!--Imagen 9-->
+        <section class="pos9 position">
+            <img class="card-image" src="https://images.pexels.com/photos/18938716/pexels-photo-18938716/free-photo-of-edificio-ventanas-balcon-palacio.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
+            <button class="guardar">Guardar</button>
+        </section>
+        <!--Imagen 10-->
+        <section class="pos10 position">
+            <img class="card-image" src="https://images.pexels.com/photos/10674610/pexels-photo-10674610.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
+            <button class="guardar">Guardar</button>
+        </section>
+        <!--Imagen 11-->
+        <section class="pos11 position">
+            <img class="card-image" src=https://images.pexels.com/photos/19120585/pexels-photo-19120585.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
+            <button class="guardar">Guardar</button>
+        </section>
+        <!--Imagen 12-->
+        <section class="pos12 position">
+            <img class="card-image" src="https://images.pexels.com/photos/18819309/pexels-photo-18819309/free-photo-of-lava.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
+            <button class="guardar">Guardar</button>
+        </section>
+        <!--Imagen 13-->
+        <section class="pos13 position">
+            <img class="card-image" src="https://images.pexels.com/photos/16725430/pexels-photo-16725430/free-photo-of-comida-madera-cafe-taza.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
+            <button class="guardar">Guardar</button>
+        </section>
+        <!--Imagen 14-->
+        <section class="pos14 position">
+            <img class="card-image" src="https://images.pexels.com/photos/18369347/pexels-photo-18369347/free-photo-of-vacaciones-en-tet-en-vietnam.png?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
+            <button class="guardar">Guardar</button>
+        </section>
+        <!--Imagen 15-->
+        <section class="pos15 position">
+            <img class="card-image" src="https://images.pexels.com/photos/18868015/pexels-photo-18868015/free-photo-of-picnic-frutas-acostado-ocio.png?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
+            <button class="guardar">Guardar</button>
+        </section>
+        <!--Imagen 16-->
+        <section class="pos16 position">
+            <img class="card-image" src="https://images.pexels.com/photos/18299386/pexels-photo-18299386/free-photo-of-rojo-fotografia-coche-vehiculo.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
+            <button class="guardar">Guardar</button>
+        </section>
+        <!--Imagen 17-->
+        <section class="pos17 position">
+            <img class="card-image" src="https://images.pexels.com/photos/19000009/pexels-photo-19000009/free-photo-of-mujer-luz-de-fondo-frente-sesion-de-estudio.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
+            <button class="guardar">Guardar</button>
+        </section>
+        <!--Imagen 18-->
+        <section class="pos18 position">
+            <img class="card-image" src="https://images.pexels.com/photos/13063591/pexels-photo-13063591.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
+            <button class="guardar">Guardar</button>
+        </section>
+        <!--Imagen 19-->
+        <section class="pos19 position">
+            <img class="card-image" src="https://images.pexels.com/photos/18963992/pexels-photo-18963992/free-photo-of-ciudad-calle-paso-de-peatones-urbano.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
+            <button class="guardar">Guardar</button>
+        </section>
+        <!--Imagen 20-->
+        <section class="pos20 position">
+            <img class="card-image" src="https://images.pexels.com/photos/18820159/pexels-photo-18820159/free-photo-of-nieve-madera-amanecer-paisaje.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
+            <button class="guardar">Guardar</button>
+        </section>
+        <!--Imagen 21-->
+        <section class="pos21 position">
+            <img class="card-image" src="https://images.pexels.com/photos/18983602/pexels-photo-18983602/free-photo-of-ligero-ciudad-gente-festival.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
+            <button class="guardar">Guardar</button>
+        </section>
+        <!--Imagen 22-->
+        <section class="pos22 position">
+            <img class="card-image" src="https://images.pexels.com/photos/19048753/pexels-photo-19048753/free-photo-of-ligero-amor-azul-verano.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
+            <button class="guardar">Guardar</button>
+        </section>
+        <!--Imagen 23-->
+        <section class="pos23 position">
+            <img class="card-image" src="https://images.pexels.com/photos/18896728/pexels-photo-18896728/free-photo-of-pajaro-bokeh-tropical-exotico.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
+            <button class="guardar">Guardar</button>
+        </section>
+        <!--Imagen 24-->
+        <section class="pos24 position">
+            <img class="card-image" src="https://images.pexels.com/photos/17843612/pexels-photo-17843612/free-photo-of-mujer-efecto-desenfocado-cara-retrato.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
+            <button class="guardar">Guardar</button>
+        </section>
+        <!--Imagen 25-->
+        <section class="pos25 position">
+            <img class="card-image" src="https://images.pexels.com/photos/18760214/pexels-photo-18760214/free-photo-of-naturaleza-bosque-hojas-arbol.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
+            <button class="guardar">Guardar</button>
+        </section>
+        <!--Imagen 26-->
+        <section class="pos26 position">
+            <img class="card-image" src="https://images.pexels.com/photos/18510651/pexels-photo-18510651/free-photo-of-naturaleza-campo-flores-verano.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
+            <button class="guardar">Guardar</button>
+        </section>
+        <!--Imagen 27-->
+        <section class="pos27 position">
+            <img class="card-image" src="https://images.pexels.com/photos/4113897/pexels-photo-4113897.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
+            <button class="guardar">Guardar</button>
+        </section>
+        <!--Imagen 28-->
+        <section class="pos28 position">
+            <img class="card-image" src="https://images.pexels.com/photos/9373924/pexels-photo-9373924.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
+            <button class="guardar">Guardar</button>
+        </section>
+        <!--Imagen 29-->
+        <section class="pos29 position">
+            <img class="card-image" src=https://images.pexels.com/photos/7874626/pexels-photo-7874626.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
+            <button class="guardar">Guardar</button>
+        </section>
+        <!--Imagen 30-->
+        <section>
+            <img src="" alt="">
+        </section>
+    </main>
+
+</body>
+</html>

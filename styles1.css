@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+/*Se declaran los valores del cuerpo*/
+body {
+    
+    font-family: 'Roboto', sans-serif;
+}
+
+/*Para la barra de navegacion se declara que es el contenedor padre y se le da un display flexible*/
+#navbar-pinterest {
+    width: 100%;
+    height: 30px;
+    font-size: 6px;
+    font-weight: bold;
+    background-color: #fff;
+    
+    display: flex;   
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    
+}
+#navbar-pinterest div{
+    display: flex;
+    height: 50%;
+    align-items: center;
+    justify-content: center;
+}
+#pinterest-icon {
+    height: 9.3px;
+    width: 9.2px;
+}
+#icono {
+    padding-left: 2%;   
+    padding-top: 2%;
+}
+
+#inicio {
+    padding-left: 2.5%;
+    padding-top: 2% ;
+    cursor: pointer;
+}
+#explorar {
+    padding-left: 2.5%;
+    padding-top: 2% ;
+    cursor: pointer;
+}
+#crear {
+    padding-left: 2.5%;
+    padding-top: 2% ;
+    cursor: pointer;
+}
+
+#notificacion {   
+    height: 9px;
+    width: 9px; 
+}
+#notifications {
+    padding-left: 2%;   
+    padding-top: 2%;
+}
+
+#mensaje {
+    height: 9px;
+    width: 9px;   
+}
+#message {
+    padding-left: 2%;   
+    padding-top: 2%;
+}
+
+#perfil {
+    height: 10px;
+    width: 10px;   
+}
+#profile-img {
+    padding-left: 2%;   
+    padding-top: 2%;
+}
+#mas {
+    height: 7px;
+    width: 7px;
+}
+#icono4 {
+    padding-left: 2%;   
+    padding-top: 2.2%;
+}
+/*Configuración de la barra de busqueda*/
+.finder img{
+    align-self: center;
+    width: 10px;
+    height: 10px;
+    padding-left: 3%;
+    padding-top: 6%;
+    
+}
+.finder input {
+    font-size: 6px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    width: 300px;
+    height:10px ;
+    padding-left: 2%;
+    padding-top: 7%; 
+}
+
+/*Señalizacion cuando el cursor esta sobre el elemento*/
+#notifications:hover {
+    transform: scaleX(1.05);
+}
+#message:hover {
+    transform: scaleX(1.05);
+}
+#profile-img:hover {
+    transform: scaleX(1.05);
+}
+#mas:hover {
+    transform: scaleX(1.05);
+}
+
+/*Definicion de las caracteristicas del main*/
+.content {
+    margin: 3%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(11, 60px);
+    grid-gap:1%;
+    padding-top: 3%;
+}
+
+.card-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 9px;
+    object-fit: cover;
+}
+
+.card-image:hover {
+    /*transform: scaleX(1.05);*/
+    filter: brightness(0.65);
+    
+
+}
+
+/*Mediaquire*/
+@media screen and (max-width:300px){
+    .content {
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-between;
+    }
+}
+
+/*Configuracion del boton*/
+
+.guardar {
+    width: 25%;
+    padding: 5% 0;
+    font-size: 4px;
+    font-weight: bold;
+    color: white;
+    background: #E60023;
+    border: none;
+    border-radius: 12rem;
+    transition: 1s all;
+    cursor: pointer;
+    justify-content: center;
+    display: none;
+    
+    position: absolute;
+    top: 1%;
+    left: 65%;
+    margin-top: 5px;
+    
+}
+
+.position {
+    position:relative;
+}
+
+.position:hover {
+    .guardar {
+        display: flex;
+    }
+}
+/*Posiciones de las imagenes ene l grid*/
+.pos1 {
+    grid-row: 1/3;
+}
+.pos2 {
+    grid-column: 2/3;
+}
+.pos3{
+    grid-column: 3/4;
+    grid-row: 1/3;
+}
+.pos4 {
+    grid-column: 4/5;
+}
+.pos5 {
+    grid-column:5/6;
+}
+.pos6 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+.pos7 {
+    grid-column: 2/3;
+    grid-row:2/4;
+}
+.pos8 {
+    grid-column:4/5;
+    grid-row:2/4;
+}
+.pos9 {
+    grid-column:5/6;
+    grid-row:2/3;
+}
+.pos10 {
+    grid-column: 1/2;
+    grid-row: 4/6;
+}
+.pos11 {
+    grid-column: 2/3;
+    grid-row: 4/6;
+}
+.pos12 {
+    grid-column: 3/4;
+    grid-row: 3/5;
+}
+.pos13 {
+    grid-column: 4/5;
+    grid-row: 4/6;
+}
+.pos14 {
+    grid-column: 5/6;
+    grid-row: 3/5;
+}
+.pos15 {
+    grid-column: 1/2;
+    grid-row: 6/8;
+}
+.pos16 {
+    grid-column: 2/3;
+    grid-row: 6/8;
+}
+.pos17 {
+    grid-column:3/4;
+    grid-row: 5/7;
+}
+.pos18 {
+    grid-column:4/5;
+    grid-row: 6/8;
+}
+.pos19{
+    grid-column:5/6;
+    grid-row: 5/7;
+}
+.pos20{
+    grid-column:1/2;
+    grid-row: 8/9;
+}
+.pos21{
+    grid-column:2/3;
+    grid-row: 8/9;
+}
+.pos22{
+    grid-column:3/4;
+    grid-row: 7/9;
+}
+.pos23{
+    grid-column:4/5;
+    grid-row: 8/9;
+}
+.pos24{
+    grid-column:5/6;
+    grid-row: 7/9;
+}
+.pos25{
+    grid-column:1/2;
+    grid-row: 9/11;
+}
+.pos26{
+    grid-column:2/3;
+    grid-row: 9/11;
+}
+.pos27{
+    grid-column:3/4;
+    grid-row: 9/11;
+}
+.pos28{
+    grid-column:4/5;
+    grid-row: 9/11;
+}
+.pos29{
+    grid-column:5/6;
+    grid-row: 9/11;
+}
